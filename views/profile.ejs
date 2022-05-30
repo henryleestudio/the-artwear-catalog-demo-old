@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <main>
+    <section class="topSec">
+      <form method="POST" action="/newEntry">
+        <input id="newinterestsEntry" type="text" name="entry">
+        <button id="addLiBtn" type="submit">Add Interests</button>
+      </form>
+    </section>
+
+    <section class="midSec">
+        <ul id="interestsList">
+          <% for(let i=0; i<interests.length; i++){ %>
+              <% if(interests[i].completed === true ){ %>
+            <li>
+              <input checked class="checkBoxes" type="checkbox">
+              <span class="delete" class="task"><%= interests[i].entry %></span>
+            </li>
+         <% }else{%>
+          <li>
+            <input class="checkBoxes" placeholder="name: contact" type="checkbox">
+            <span class="delete" class="task"><%= interests[i].entry %></span>
+          </li>
+         <% }%>
+         <% }%>
+        </ul>
+    </section>
+
+    <section class="bottomSec">
+
+      <!-- <p>
+        You Have<span id="interestsLeftText"> 0 </span>  To Complete
+    </p> -->
+
+      <button id="clearAll">Clear All</button>
+
+      <button id="clearCompletedBtn">Clear Checked</button>
+    </section>
+  </main>
+  
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+            <!-- add button with delete class, in main.js QueryselectorAll to target all buttons with delete class.. deleate buttons, loop through deletes but, event listerns to but that s clicked..  -->

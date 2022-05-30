@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  /* background-image: url("../img/tile-background-2.png"); */
+  background-color: white;
+  text-align: center;
+}
+
+.jumbotron{
+  display: none; 
+}
+
+#coverImg{
+  height: 75vh;
+}
+
+#catalogImg-1{
+  background-image: url(img/catalog-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140vh;
+}
+
+#product-1 {
+  float: left;
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+}
+
+menu{
+  margin: 0px;
+  display: inline-block;
+  position: fixed;
+  text-decoration: underline;
+  color: white;
+  font-size: 1.7rem;
+  top: 3rem;
+  right: 4rem;
+}
+
+form {
+  float: left;
+}
+
+input {
+  margin-right: -0.5rem;
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  color: #1B1B1B;
+}
+
+#emailForm {
+  float: left;
+  margin-left: 3rem;
+  /* margin-top: 77rem; */
+}
+
+/* .midSec {
+} */
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #1B1B1B;
+}
+
+li .markedDon {
+  color: grey;
+}
+
+.siteTitle li {
+  float: left;
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 3.4rem;
+}
+
+.siteTitle {
+  margin-left: 1rem;
+}
+
+#title {
+  margin-left: -2rem;
+  font-weight: 200;
+}
+
+#tagLine {
+  margin-left: 1rem;
+  font-weight: 800;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin: 0px;
+}
+
+ul, ol {
+  margin: 0;
+}
+ 
+p {
+  color: black;
+  font-size: 2rem;
+}
+
+span {
+  color: black;
+  font-size: 1.6rem;
+  margin-left: 5px;
+  font-size: 2rem;
+}
+
+
+
+
